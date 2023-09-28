@@ -5,7 +5,7 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    
+    justify-content: center;
 }
 
 .icones {
@@ -136,22 +136,29 @@ nav{
   font-weight: 400;
 }
 
+.Conteiner00 {
+  justify-items: center;
+  display: flex;
+  text-align: center;
+} 
+
 #Secao1 {
   display: flex;
+  justify-content: center;
   background-color: #EDCBAB;
   width: 100%;
   height: 434px;
 }
 
-.Conteiner00 {
-  justify-content: center;
+#Secao3 {
   display: flex;
+  justify-content: center;
+  background-color: #EDCBAB;
+  width: 100%;
+  height: 600px;
 }
 
-#Conteiner1 {
-  justify-content: center;
-  margin-left: 180px; 
-  margin-bottom: 580px;
+#Conteiner1, #Conteiner3 {
   color: #581200;
   width: 975px;
   height: 975px;
@@ -160,40 +167,23 @@ nav{
 #Secao2 {
   display: flex;
   background-color: #581200;
+  justify-content: center;
   width: 100%;
   height: 434px;
 }
 
 #Conteiner2 {
-  justify-content: center;
-  margin-left: 180px; 
-  margin-bottom: 580px;
   color: #EDCBAB;
   width: 975px;
   height: 975px;
 }
 
-#Secao3 {
-  display: flex;
-  background-color: #EDCBAB;
-  width: 100%;
-  height: 600px;
-}
-
-#Conteiner3 {
-  justify-content: center;
-  margin-left: 180px; 
-  margin-bottom: 580px;
-  color: #581200;
-  width: 975px;
-  height: 975px;
-}
 
 .Card {
   background-color: #581200;
   display: flex;
   width: 320px;
-  height: 410px;
+  height: 430px;
 }
 
 #replace {
