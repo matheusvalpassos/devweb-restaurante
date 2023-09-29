@@ -149,15 +149,7 @@ nav{
   height: 434px;
 }
 
-#Secao3 {
-  display: flex;
-  justify-content: center;
-  background-color: #EDCBAB;
-  width: 100%;
-  height: 600px;
-}
-
-#Conteiner1, #Conteiner3 {
+#Conteiner1 {
   color: #581200;
   width: 975px;
   height: 975px;
@@ -177,12 +169,39 @@ nav{
   height: 975px;
 }
 
+#Secao3 {
+  display: flow-root;
+  justify-self: center;
+  background-color: #EDCBAB;
+  width: 100%;
+  height: 600px;
+  align-self: center;
+  padding-left: 435px;
+}
+
+
+#Conteiner3 {
+  display: flex;
+  justify-content: space-between;
+  color: #581200;
+  width: 975px;
+  height: auto;
+}
+
+#TituloSecao3 {
+  font-size: 42px;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: #581200;
+  
+}
 
 .Card {
   background-color: #581200;
   display: flex;
   width: 320px;
-  height: 430px;
+  height: 420px;
 }
 
 #replace {
@@ -196,4 +215,50 @@ nav{
   object-position: center;
   width: 100%;
   height: 328px;
+}
+
+.titulocard {
+  padding-left: 15px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.corpocard {
+  margin-top: -10px;
+  padding-left: 15px;
+  width: 200px;
+  height: 20px;
+  color: #EDCBAB;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  line-height: 108.5%;
+}
+
+.avaliacao {
+  border-radius: 3px;
+  background: #a00000;
+  width: 78px;
+  height: 35px;
+  margin-left: 223px;
+  margin-right: 19px;
+  margin-top: -42px;
+}
+
+.estrela {
+  width: 22px;
+  height: 22px;
+  justify-self: center;
+  margin-left: 5px;
+  margin-top: 5px;  
+}
+
+.notaavaliacao {
+  margin-top: -28px;
+  padding-left: 35px;
+  color: #ffe600; 
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
