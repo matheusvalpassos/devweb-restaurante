@@ -1,264 +1,149 @@
-*
-.html,body{
-    height: 100%;
-    overflow-y: visible;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-.icones {
-  width: 14px;
-  height: 14px;
-  margin-top: 5px;
-}
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/SMALL-ICON.png" type="image/png">
+    <script src="slide.js" defer></script>
+    <title>Restaurant - O melhor do RJ!</title>
+</head>
+<body>
+    <header class="top_header">
+        <div id="left_head">
+            <div>
+                <img class="icones" src="/images/icon/pin.png"><a> Av. Saquarema, 4000. Porto da Roça - Saquarema/RJ.</a>
+            </div>
+            <div>
+                <img class="icones" src="/images/icon/tel.png"><a> (22) 99999-9999</a>
+            </div>
+        </div>
+        </br>
+        <div id="right_head">
+        <div><a class="Topicos2" href=""> Trabalhe conosco</a></div>
+        </br>
+        <a>|</a>
+        <div><a class="Topicos2" href=""> Faça sua Reserva</a></div>
+        </br>
+        <a>|</a>
+        <div>
+            <a href=""></a><img class="icones" src="/images/icon/facebook.png">
+            <img class="icones" src="/images/icon/instagram.png" href="">
+            <img class="icones" src="/images/icon/linkedin.png" href="">
+        </div>
+        </div>
+        
 
-.top_header {
-  padding-left: 50px;
-  padding-right: 50px;
-  background-color: #581200;
-  text-align: center;
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 12px;
-  color: #EDCBAB;
-  display: flexbox;
-  justify-content: safe;
-}
-
-#left_head {
-  height: 30px;
-  width: 650px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#right_head {
-  height: 30px;
-  width: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.Topicos2 {
-  text-decoration: none;
-  color: #EDCBAB;
-}
-
-header{
-  display: flex;
-  background-color: #EDCBAB;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 10px 20px;
-}
-nav{
-    text-align: right;
-}
-
-.Logo_icon{
-  width: 3%;
-  margin-left: 20px;
-}
-
-.Topicos {
-  display: inline-flex;
-  align-items: center;  
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  color: #581200;
-  text-decoration: none;
-  margin-right: 30px;
-}
-#button_1 { 
-  background-color: #a00000;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  border: solid;
-  border-width: 2px;
-  border-radius: 50px;
-  width: 150px;
-  height: 40px;
-  font-weight: 900;
-  color: rgb(241, 224, 166);
-  transition: transform 200ms ease;
-}
-
-#button_1:hover {
-  transform: scale(1.1);
-  opacity: 0.7;
-  background-color:  rgb(241, 224, 166);
-  color: #a00000;
-}
-
-.slider-container {
-  width: auto;
-  height: 500px;
-  overflow: hidden;
-  object-fit: fill;
-}
-
-.slider {
-  display: flex;
-  width: 200%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slider img {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-#TituloSecao {
-  font-size: 42px;
-  text-decoration: underline;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
-}
-
-.CorpoSecao1 {
-  color: #581200;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.CorpoSecao2 {
-  color: #EDCBAB;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.Conteiner00 {
-  justify-items: center;
-  display: flex;
-  text-align: center;
-} 
-
-#Secao1 {
-  display: flex;
-  justify-content: center;
-  background-color: #EDCBAB;
-  width: 100%;
-  height: 434px;
-}
-
-#Conteiner1 {
-  color: #581200;
-  width: 975px;
-  height: 975px;
-}
-
-#Secao2 {
-  display: flex;
-  background-color: #581200;
-  justify-content: center;
-  width: 100%;
-  height: 434px;
-}
-
-#Conteiner2 {
-  color: #EDCBAB;
-  width: 975px;
-  height: 975px;
-}
-
-#Secao3 {
-  display: flow-root;
-  justify-self: center;
-  background-color: #EDCBAB;
-  width: 100%;
-  height: 600px;
-  align-self: center;
-  padding-left: 435px;
-}
+    </header>
+    <header>
+        <img class="Logo_icon" src="assets/SMALL-ICON.png"></img>
+        <nav>
+          <a class="Topicos" href="">Home</a>
+          <a class="Topicos" href="">Sobre</a>
+          <a class="Topicos" href="">Nossa História</a>
+          <a class="Topicos" href="">Nosso Cardápio</a>
+          <a class="Topicos" href="">Galeria</a>
+          <a class="Topicos" href="">Contato</a>    
+          <a href=""><button id="button_1">DELIVERY</button></a>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="images/1.jpg">
+                <img src="images/2.jpg">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </section>
 
 
-#Conteiner3 {
-  display: flex;
-  justify-content: space-between;
-  color: #581200;
-  width: 975px;
-  height: auto;
-}
-
-#TituloSecao3 {
-  font-size: 42px;
-  text-decoration: underline;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
-  color: #581200;
-  
-}
-
-.Card {
-  background-color: #581200;
-  display: flex;
-  width: 320px;
-  height: 420px;
-}
-
-#replace {
-  background-color: #EDCBAB;
-  width: 320px;
-  height: 328px;
-}
-
-.imag {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 328px;
-}
-
-.titulocard {
-  padding-left: 15px;
-  color: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.corpocard {
-  margin-top: -10px;
-  padding-left: 15px;
-  width: 200px;
-  height: 20px;
-  color: #EDCBAB;
-  font-family: 'Poppins', sans-serif;
-  font-size: 10px;
-  line-height: 108.5%;
-}
-
-.avaliacao {
-  border-radius: 3px;
-  background: #a00000;
-  width: 78px;
-  height: 35px;
-  margin-left: 223px;
-  margin-right: 19px;
-  margin-top: -42px;
-}
-
-.estrela {
-  width: 22px;
-  height: 22px;
-  justify-self: center;
-  margin-left: 5px;
-  margin-top: 5px;  
-}
-
-.notaavaliacao {
-  margin-top: -28px;
-  padding-left: 35px;
-  color: #ffe600; 
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-}
+    <div id="Conteiner00">
+        <section id="Secao1">
+            <div id="Conteiner1">
+                <H1 id="TituloSecao">Sobre</H1>
+                <p class="CorpoSecao1">Restaurant - O Melhor do RJ!" é um verdadeiro oásis gastronômico, situado estrategicamente na Av. Saquarema 4000, no pitoresco bairro de Porto da Roça, em Saquarema. Com uma atmosfera aconchegante e uma decoração encantadora, este estabelecimento cativa os clientes desde o momento em que entram pela porta.
+                    
+                </br></br>O cardápio é uma celebração dos sabores autênticos do Rio de Janeiro, apresentando uma fusão criativa de ingredientes locais e técnicas culinárias contemporâneas. Cada prato é uma obra-prima culinária, preparada com maestria pelos talentosos chefs do restaurante.
+                Os clientes podem desfrutar de vistas deslumbrantes para o oceano enquanto saboreiam iguarias que vão desde frutos do mar frescos até pratos tradicionais cariocas com um toque sofisticado. Além disso, a extensa carta de vinhos e os coquetéis artesanais complementam perfeitamente a experiência gastronômica.
+                    
+                </br></br>Com um serviço impecável e um ambiente acolhedor, "Restaurant - O Melhor do RJ!" é o lugar ideal para momentos especiais, encontros românticos ou simplesmente para uma refeição memorável. Venha explorar o que a cozinha carioca tem de melhor neste refúgio gastronômico em Saquarema.</p>
+            </div>
+        </section>
+    
+        <section id="Secao2">
+            <div id="Conteiner2">
+                <H1 id="TituloSecao">Nossa História</H1>
+                <p class="CorpoSecao2">É um capítulo emocionante na trajetória do "Restaurant - O Melhor do RJ!". Mesmo em meio aos desafios da pandemia, nosso restaurante demonstrou resiliência e comprometimento inabaláveis. Desde o início desse período desafiador, continuamos a servir os clientes com a mesma paixão e dedicação que sempre nos caracterizaram.
+    
+                </br></br>Durante esses tempos difíceis, adaptamos nossa operação para garantir a segurança de nossos clientes e funcionários. Implementamos rigorosos protocolos de higiene, distanciamento social e oferecemos opções de delivery e take-out para atender às necessidades em constante evolução de nossa comunidade.
+                    
+                </br></br>Estamos orgulhosos de compartilhar que, desde o início da pandemia, testemunhamos um crescimento constante e um apoio incrível de nossa leal clientela. É gratificante ver as mesas do restaurante ocupadas novamente, as risadas e as conversas fluindo, e a alegria de nossos clientes ao desfrutar de nossos pratos excepcionais.
+                    
+                    Agradecemos a todos que nos apoiaram ao longo dessa jornada e prometemos continuar a proporcionar experiências gastronômicas memoráveis, celebrando o melhor da culinária carioca e mantendo nossa dedicação aprimorada. O "Restaurant - O Melhor do RJ!" está aqui para criar momentos especiais e sabores inesquecíveis, enquanto olhamos para o futuro com otimismo e gratidão.</p>
+            </div>
+        </section>
+    
+        <section id="Secao3">
+            <H1 id="TituloSecao3">Nosso Cardápio</H1>
+            <div id="Conteiner3">
+                <div class="Card">
+                    <div id="replace">
+                        <div>
+                            <img class="imag" src="images/2.jpg">
+                            </br>
+                            <div><h1 class="titulocard">Churrasco de Alcatra</h1></div>
+                            <div><p class="corpocard">A estrela do churrasco, a alcatra é um corte de carne bovina muito apreciado por sua maciez e sabor suave.</p></div>
+                            <div class="avaliacao">
+                                <div>
+                                    <img class="estrela" src="images/icon/star.png">
+                                    <h1 class="notaavaliacao">4.5</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div id="replace">
+                        <div>
+                            <img class="imag" src="images/2.jpg">
+                            </br>
+                            <div><h1 class="titulocard">Churrasco de Alcatra</h1></div>
+                            <div><p class="corpocard">A estrela do churrasco, a alcatra é um corte de carne bovina muito apreciado por sua maciez e sabor suave.</p></div>
+                            <div class="avaliacao">
+                                <div>
+                                    <img class="estrela" src="images/icon/star.png">
+                                    <h1 class="notaavaliacao">4.5</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div id="replace">
+                        <div>
+                            <img class="imag" src="images/2.jpg">
+                            </br>
+                            <div><h1 class="titulocard">Churrasco de Alcatra</h1></div>
+                            <div><p class="corpocard">A estrela do churrasco, a alcatra é um corte de carne bovina muito apreciado por sua maciez e sabor suave.</p></div>
+                            <div class="avaliacao">
+                                <div>
+                                    <img class="estrela" src="images/icon/star.png">
+                                    <h1 class="notaavaliacao">4.5</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
